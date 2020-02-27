@@ -1,12 +1,12 @@
 {
-    "name": "iamjesseshow-starter-project",
+    "name": "shridharulli-personal-website",
     "version": "1.0.0",
-    "description": "Starter Project",
+    "description": "Personal Website",
     "main": "index.html",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "author": "Jesse Showalter",
+    "author": "Shridhar Ulli",
     "license": "ISC",
     "devDependencies": {
         "browser-sync": "^2.26.3",
