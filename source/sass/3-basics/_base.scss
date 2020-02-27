@@ -16,9 +16,7 @@ html{
 
 body{
   background-color: $background;
-  font-size: 14px;
-  line-height: 1.6;
-  font-size: 14px;
+  font-size: 16px;
   color: black;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
@@ -37,7 +35,5 @@ body{
   transform: translate(0%,-50%);
 }
 
-section{
-  display: -webkit-box;
-}
+
   

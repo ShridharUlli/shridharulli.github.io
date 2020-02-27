@@ -199,9 +199,7 @@ html {
 
 body {
   background-color: var(--background);
-  font-size: 14px;
-  line-height: 1.6;
-  font-size: 14px;
+  font-size: 16px;
   color: black;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
@@ -214,9 +212,6 @@ body {
   position: absolute;
   top: 50%;
   transform: translate(0%, -50%); }
-
-section {
-  display: -webkit-box; }
 
 .button,
 button,
@@ -271,13 +266,6 @@ section ul.social-media-icons li {
 section ul.social-media-icons li a {
   color: var(--color);
   font-size: 36px; }
-
-a {
-  color: #0074D9;
-  text-decoration: none;
-  outline: 0; }
-  a:hover, a:focus {
-    color: #F012BE; }
 
 ::selection {
   background: #FFF498; }
@@ -339,7 +327,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin: 0 0 20px 0;
   font-weight: 400;
-  font-size: 14px; }
+  font-size: 16px; }
 
 em {
   font-style: italic; }
@@ -475,6 +463,18 @@ section .about-meet-section-left {
   font-weight: 100;
   margin: 0; }
 
+.copy-email-link {
+  background: transparent;
+  border: transparent;
+  color: var(--color);
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+  padding: 1px 6px; }
+  .copy-email-link:hover, .copy-email-link:active, .copy-email-link:focus {
+    outline: 0;
+    transform: none; }
+
 .tooltip {
   position: relative; }
 
@@ -489,7 +489,9 @@ section .about-meet-section-left {
   background-color: var(--color);
   color: var(--background);
   padding: 6px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  font-weight: 500;
+  text-transform: none; }
 
 .tooltip:hover .tooltip-text {
   visibility: visible; }
