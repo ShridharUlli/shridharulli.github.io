@@ -1,0 +1,29 @@
+.header-title-contact-page{
+    font-size: 40px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.header-sub-title-contact-page{
+    font-size: 20px;
+    font-weight: 100;
+    margin: 0;  
+}
+.tooltip{
+    position: relative;
+}
+.tooltip-text{
+    position: absolute;
+    visibility: hidden;
+    top: -31px;
+    right: -65px;
+    font-size: 14px;
+    font-family: $secondary-font-family;
+    width: 140px;
+    background-color:$color;
+    color: $background;
+    padding: 6px;
+    border-radius: 5px;
+}
+.tooltip:hover .tooltip-text{
+    visibility: visible;
+}

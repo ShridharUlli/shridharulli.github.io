@@ -19,7 +19,8 @@ let autoprefixer = require('gulp-autoprefixer');
 let minifycss = require('gulp-clean-css');
 
 // JSS / plugins
-let uglify = require('gulp-uglify');
+// let uglify = require('gulp-uglify');
+let uglify = require('gulp-uglify-es').default;
 
 // Utility plugins
 let concat = require('gulp-concat');
@@ -37,7 +38,7 @@ let images = require('gulp-imagemin');
 
 // Project Variables
 
-let styleSrc = 'source/sass/**/*.sass';
+let styleSrc = 'source/sass/**/*.scss';
 let styleDest = 'build/assets/css/';
 
 let vendorSrc = 'source/js/vendors/';
@@ -58,7 +59,7 @@ let htmlDest = 'build/';
 
 // Compiles SASS files
 function css(done) {
-    src('source/sass/**/*.sass')
+    src('source/sass/**/*.scss')
         .pipe(plumber())
         .pipe(sass({
             style: 'compressed'

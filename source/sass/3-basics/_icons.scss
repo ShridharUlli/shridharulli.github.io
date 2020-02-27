@@ -1,0 +1,19 @@
+
+.skills-icon{
+    font-weight: 800;
+    font-size: 24px;
+    margin-right: 10px;
+}
+section ul.social-media-icons{
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+}
+section ul.social-media-icons li{
+    list-style-type: none;
+    padding: 10px;
+}
+section ul.social-media-icons li a{
+    color: $color;
+    font-size: 36px;
+}

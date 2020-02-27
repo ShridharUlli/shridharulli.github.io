@@ -1,0 +1,26 @@
+#logo{
+    fill: $color;
+}
+
+header .logo{
+    float: left;
+}
+header nav ul{
+    display: flex;
+    justify-content: flex-end;
+}
+nav ul li{
+    list-style-type: none;
+    padding: 20px;
+}
+nav ul li a{
+    font-family: $primary-font-family;
+    font-weight: 100;
+    color: $color;
+    text-decoration: none;
+}
+nav ul li a.active{
+    font-weight: 600;
+}
+
+
