@@ -360,6 +360,9 @@ nav ul li {
   list-style-type: none;
   padding: 20px; }
 
+nav ul li:last-child {
+  padding-right: 0px; }
+
 nav ul li a {
   font-family: "Merriweather", serif;
   font-weight: 100;
