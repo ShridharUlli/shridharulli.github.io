@@ -182,12 +182,12 @@ th {
   padding: 0; }
 
 :root {
-  --background: #FFFF7F;
-  --color: #119DA4; }
+  --background: #F0F2FA;
+  --color: #21447F; }
 
 [data-theme="dark"] {
-  --background: #119DA4;
-  --color: #FFFF7F; }
+  --background: #21447F;
+  --color: #F0F2FA; }
 
 html {
   box-sizing: border-box; }
@@ -423,14 +423,18 @@ input:checked + .slider:before {
   font-family: "Raleway", sans-serif !important; }
 
 .cards .card-container h1 {
-  color: #119DA4; }
+  color: var(--background); }
 
 .cards .card-container a {
   font-size: 12px;
-  color: #119DA4; }
+  color: var(--background); }
+
+.cards .card-container p {
+  font-size: 16px;
+  color: var(--background); }
 
 .cards .card-container {
-  background-color: white;
+  background-color: var(--color);
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048); }
 
 .cards .card-details {

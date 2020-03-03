@@ -1,15 +1,25 @@
 //
 // Some Useful color Vars via http://clrs.cc/
 //
+// :root{
+//     --background: #FFFF7F;
+//     --color: #119DA4;    
+// }
+
+// [data-theme="dark"] {
+//     --background: #119DA4;
+//     --color: #FFFF7F;
+// } 
+
 :root{
-    --background: #FFFF7F;
-    --color: #119DA4;    
+    --background: #F0F2FA;
+    --color: #21447F;    
 }
 
 [data-theme="dark"] {
-    --background: #119DA4;
-    --color: #FFFF7F;
-} 
+    --background: #21447F;
+    --color: #F0F2FA;
+}
 
 $background: var(--background);
 $color: var(--color);
