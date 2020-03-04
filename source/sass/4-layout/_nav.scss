@@ -4,11 +4,13 @@
 
 header .logo{
     float: left;
+    margin-top: 10px;
 }
 header nav ul{
     display: flex;
     justify-content: flex-end;
 }
+
 nav ul li{
     list-style-type: none;
     padding: 20px;
