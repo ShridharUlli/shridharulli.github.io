@@ -455,6 +455,16 @@ input:checked + .slider:before {
 .cards .card-container:hover {
   box-shadow: 0 8.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072); }
 
+.article-container {
+  background-color: var(--color);
+  padding: 30px;
+  color: var(--background);
+  font-family: "Raleway", sans-serif; }
+
+.article-main-header, .article-second-header {
+  color: var(--background);
+  font-family: "Raleway", sans-serif; }
+
 .about-me-details {
   color: var(--color);
   font-family: "Raleway", sans-serif;

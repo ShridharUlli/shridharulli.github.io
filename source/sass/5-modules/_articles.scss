@@ -1,0 +1,10 @@
+.article-container{   
+    background-color: $color;
+    padding: 30px;
+    color: $background;
+    font-family: $secondary-font-family;
+}
+.article-main-header, .article-second-header{
+    color: $background;
+    font-family: $secondary-font-familys;
+}
