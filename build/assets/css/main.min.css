@@ -459,7 +459,8 @@ input:checked + .slider:before {
   background-color: var(--color);
   padding: 30px;
   color: var(--background);
-  font-family: "Raleway", sans-serif; }
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 10vh; }
 
 .article-main-header, .article-second-header {
   color: var(--background);
