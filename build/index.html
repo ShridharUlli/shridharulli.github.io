@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/png" href="/build/assets/img/favicon.png" sizes="16x16"/>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/tailwind.css" />
     <link rel="stylesheet" href="assets/css/main.min.css" />
+    
 </head>
 <body>
-    <div class="container">
+    <div class="w-11/12 mx-auto">
         <header>
             <div class="logo">
                 <a href="index.html">
@@ -51,10 +53,10 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="assets/files/Resume.pdf" target="_blank">Resume</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="work.html">Work</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li class="hidden sm:block"><a href="assets/files/Resume.pdf" target="_blank">Resume</a></li>
+                    <li class="hidden sm:block"><a href="about.html">About Me</a></li>
+                    <li class="hidden sm:block"><a href="work.html">Work</a></li>
+                    <li class="hidden sm:block"><a href="contact.html">Contact</a></li>
                     <li class="switch">
                         <label class="theme-switch" for="checkbox">
                             <input type="checkbox" id="checkbox" />
@@ -66,17 +68,35 @@
         </header>
 
         <section>
-            <div class="centered-content">
-                <h1 class="header-title">Shridhar Ulli</h1>
-                <h4 class="header-sub-title">Front-End Engineer</h4>
-                <ul class="social-media-icons">
-                    <li><a href="https://www.linkedin.com/in/shridhar-ulli-b34424a9/" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
-                    <li><a href="https://twitter.com/shridharulli" target="_blank"><i class="fa fa-twitter"></i></a></li>  
-                    <!-- <li><a href=""><i class="fa fa-instagram" target="_blank"></i></a></li> -->
-                </ul> 
+            <div class="flex flex-col justify-center h-screen-70">
+                
+                    <h1 class="gigantic font-bold">Shridhar Ulli</h1>
+                    <h2 class="large font-light">Front-End Engineer</h2>
+                    <ul class="social-media-icons">
+                        <li><a href="https://www.linkedin.com/in/shridhar-ulli-b34424a9/" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+                        <li><a href="https://twitter.com/shridharulli" target="_blank"><i class="fa fa-twitter"></i></a></li>  
+                        <!-- <li><a href=""><i class="fa fa-instagram" target="_blank"></i></a></li> -->
+                    </ul> 
+                
             </div>
              
         </section>
+
+
+        <div>
+            <button href="" class="fixed bottom-0 right-0 m-5 h-12 w-12 block sm:hidden bg-contrast text-contrast focus:outline-none font-bold p-5 rounded-full shadow-lg text-base" id="mobile-nav-icon">
+                <i class="fa fa-bars" id="nav-icon"></i>
+            </button>
+            <div class="fixed right-0 bottom-0 hidden bg-gray-200 shadow-sm m-20 rounded shadow-xl" id="mobile-nav">
+                <ul class="p-3 mr-20 text-blue-800 text-primary">
+                    <li class="p-1"><a href="assets/files/Resume.pdf" target="_blank">Resume</a></li>
+                    <li class="p-1"><a href="about.html">About Me</a></li>
+                    <li class="p-1"><a href="work.html">Work</a></li>
+                    <li class="p-1"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        
                 
     </div>
   

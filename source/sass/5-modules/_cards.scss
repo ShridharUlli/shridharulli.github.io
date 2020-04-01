@@ -1,20 +1,8 @@
-.cards{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-}
-/* .cards{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: wrap;   
-} */
-.cards .card-container h1, .cards .card-container p, .cards .card-container a{
+
+.cards .card-container h4, .cards .card-container p, .cards .card-container a{
     font-family: $secondary-font-family!important;
 }
-.cards .card-container h1{
+.cards .card-container h4{
     color: var(--background);
 }
 .cards .card-container a{
@@ -31,7 +19,7 @@
     box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048);
 }
 .cards .card-details{
-    padding: 0px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
 }
 .cards .card-container img{
     width: 100%;

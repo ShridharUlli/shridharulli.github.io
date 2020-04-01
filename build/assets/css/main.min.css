@@ -1,193 +1,56 @@
-/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900|Raleway:100,200,300,400,500,600,700,800,900&display=swap");
-html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%; }
-
-body {
-  margin: 0;
-  padding: 0; }
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-summary {
-  display: block; }
-
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
-  vertical-align: baseline; }
-
-audio:not([controls]) {
-  display: none;
-  height: 0; }
-
-[hidden],
-template {
-  display: none; }
-
-a {
-  background-color: transparent; }
-
-a:active,
-a:hover {
-  outline: 0; }
-
-abbr[title] {
-  border-bottom: 1px dotted; }
-
-b,
-strong {
-  font-weight: bold; }
-
-dfn {
-  font-style: italic; }
-
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0; }
-
-mark {
-  background: #ff0;
-  color: #000; }
-
-small {
-  font-size: 80%; }
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline; }
-
-sup {
-  top: -0.5em; }
-
-sub {
-  bottom: -0.25em; }
-
-img {
-  border: 0; }
-
-svg:not(:root) {
-  overflow: hidden; }
-
-figure {
-  margin: 1em 40px; }
-
-hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0; }
-
-pre {
-  overflow: auto; }
-
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, monospace;
-  font-size: 1em; }
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  color: inherit;
-  font: inherit;
-  margin: 0; }
-
-button {
-  overflow: visible; }
-
-button,
-select {
-  text-transform: none; }
-
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button;
-  cursor: pointer; }
-
-button[disabled],
-html input[disabled] {
-  cursor: default; }
-
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0; }
-
-input {
-  line-height: normal; }
-
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  padding: 0; }
-
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  height: auto; }
-
-input[type="search"] {
-  -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box; }
-
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
-
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
-
-legend {
-  border: 0;
-  padding: 0; }
-
-textarea {
-  overflow: auto; }
-
-optgroup {
-  font-weight: bold; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-td,
-th {
-  padding: 0; }
-
 :root {
-  --background: #F0F2FA;
+  --background: #ffffff;
   --color: #21447F; }
 
 [data-theme="dark"] {
   --background: #21447F;
-  --color: #F0F2FA; }
+  --color: #ffffff; }
+
+.h-screen-10 {
+  height: 10vh; }
+
+.h-screen-20 {
+  height: 20vh; }
+
+.h-screen-30 {
+  height: 30vh; }
+
+.h-screen-40 {
+  height: 40vh; }
+
+.h-screen-50 {
+  height: 50vh; }
+
+.h-screen-60 {
+  height: 60vh; }
+
+.h-screen-70 {
+  height: 70vh; }
+
+.h-screen-80 {
+  height: 80vh; }
+
+.h-screen-90 {
+  height: 90vh; }
+
+.bg-default {
+  background-color: var(--background); }
+
+.bg-contrast {
+  background-color: var(--color); }
+
+.text-default {
+  color: var(--color); }
+
+.text-contrast {
+  color: var(--background); }
+
+.text-primary {
+  font-family: "Merriweather", serif; }
+
+.text-secondary {
+  font-family: "Raleway", sans-serif; }
 
 html {
   box-sizing: border-box; }
@@ -204,55 +67,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
 
-.container {
-  width: 1170px;
-  margin: 0 auto; }
-
-.container section .centered-content {
-  position: absolute;
-  top: 50%;
-  transform: translate(0%, -50%); }
-
-img.img-responsive {
-  width: 100%;
-  height: 100%; }
-
-.button,
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
-  display: inline-block;
-  padding: 20px 60px;
-  color: black;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 600;
-  text-transform: uppercase;
-  text-decoration: none;
-  white-space: nowrap;
-  background-color: white;
-  border-radius: 4px;
-  cursor: pointer;
-  box-sizing: border-box;
-  transition: all 0.2s ease; }
-  .button:hover, .button:active, .button:focus,
-  button:hover,
-  button:active,
-  button:focus,
-  input[type="submit"]:hover,
-  input[type="submit"]:active,
-  input[type="submit"]:focus,
-  input[type="reset"]:hover,
-  input[type="reset"]:active,
-  input[type="reset"]:focus,
-  input[type="button"]:hover,
-  input[type="button"]:active,
-  input[type="button"]:focus {
-    outline: 0;
-    transform: scale(1.01);
-    transform: translateY(3px); }
-
 .skills-icon {
   font-weight: 800;
   font-size: 24px;
@@ -265,7 +79,7 @@ section ul.social-media-icons {
 
 section ul.social-media-icons li {
   list-style-type: none;
-  padding: 10px; }
+  padding-right: 20px; }
 
 section ul.social-media-icons li a {
   color: var(--color);
@@ -284,7 +98,7 @@ img::-moz-selection {
   background: transparent; }
 
 body {
-  -webkit-tap-highlight-color: #FFF498; }
+  -webkit-tap-highlight-color: #e2e8f0; }
 
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6 {
@@ -295,32 +109,35 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 110px;
   line-height: 1.09;
   letter-spacing: -2px; }
+  @media only screen and (max-width: 639px) {
+    .gigantic {
+      font-size: 55px; } }
 
 .huge, h1 {
   font-size: 68px;
   line-height: 1.05; }
-  @media only screen and (max-width: 680px) {
+  @media only screen and (max-width: 639px) {
     .huge, h1 {
       font-size: 44px; } }
 
 .large, h2 {
   font-size: 42px;
   line-height: 1.14; }
-  @media only screen and (max-width: 680px) {
+  @media only screen and (max-width: 639px) {
     .large, h2 {
-      font-size: 32px; } }
+      font-size: 25px; } }
 
 .bigger, h3 {
   font-size: 26px;
   line-height: 1.38; }
-  @media only screen and (max-width: 680px) {
+  @media only screen and (max-width: 639px) {
     .bigger, h3 {
       font-size: 22px; } }
 
 .big, h4 {
   font-size: 22px;
   line-height: 1.38; }
-  @media only screen and (max-width: 680px) {
+  @media only screen and (max-width: 639px) {
     .big, h4 {
       font-size: 18px; } }
 
@@ -373,6 +190,13 @@ nav ul li a {
 nav ul li a.active {
   font-weight: 600; }
 
+#nav-icon {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  height: 50%;
+  transform: translate(-50%, -50%); }
+
 .theme-switch {
   display: inline-block;
   height: 21px;
@@ -414,23 +238,10 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%; }
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 20px;
-  grid-row-gap: 20px; }
-
-/* .cards{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: wrap;   
-} */
-.cards .card-container h1, .cards .card-container p, .cards .card-container a {
+.cards .card-container h4, .cards .card-container p, .cards .card-container a {
   font-family: "Raleway", sans-serif !important; }
 
-.cards .card-container h1 {
+.cards .card-container h4 {
   color: var(--background); }
 
 .cards .card-container a {
@@ -446,7 +257,7 @@ input:checked + .slider:before {
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048); }
 
 .cards .card-details {
-  padding: 0px 20px 20px 20px; }
+  padding: 20px 20px 20px 20px; }
 
 .cards .card-container img {
   width: 100%;
@@ -471,20 +282,6 @@ input:checked + .slider:before {
   font-family: "Raleway", sans-serif;
   line-height: 1.6;
   font-weight: 500; }
-
-section .about-meet-section-left {
-  width: 50%;
-  margin-top: 5%; }
-
-.header-title-contact-page {
-  font-size: 40px;
-  margin: 0;
-  margin-bottom: 10px; }
-
-.header-sub-title-contact-page {
-  font-size: 20px;
-  font-weight: 100;
-  margin: 0; }
 
 .copy-email-link {
   background: transparent;
@@ -518,12 +315,3 @@ section .about-meet-section-left {
 
 .tooltip:hover .tooltip-text {
   visibility: visible; }
-
-.header-title {
-  font-size: 100px;
-  margin: 0; }
-
-.header-sub-title {
-  font-size: 30px;
-  font-weight: 100;
-  margin: 0; }
