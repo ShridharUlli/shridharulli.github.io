@@ -1,0 +1,54 @@
+
+//viewport height utilitiess
+
+.h-screen-10{
+    height: 10vh;
+}
+.h-screen-20{
+    height: 20vh;
+}
+.h-screen-30{
+    height: 30vh;
+}
+.h-screen-40{
+    height: 40vh;
+}
+.h-screen-50{
+    height: 50vh;
+}
+.h-screen-60{
+    height: 60vh;
+}
+.h-screen-70{
+    height: 70vh;
+}
+.h-screen-80{
+    height: 80vh;
+}
+.h-screen-90{
+    height: 90vh;
+}
+
+//bg and color
+.bg-default{
+    background-color: $background;
+}
+.bg-contrast{
+    background-color: $color;
+}
+.text-default{
+    color: $color;
+}
+.text-contrast{
+    color: $background;
+}
+
+//font-family
+
+
+.text-primary{
+    font-family: $primary-font-family;
+}
+.text-secondary{
+    font-family: $secondary-font-family;
+}

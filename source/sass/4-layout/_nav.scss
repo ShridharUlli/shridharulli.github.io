@@ -29,3 +29,10 @@ nav ul li a.active{
 }
 
 
+#nav-icon{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+}

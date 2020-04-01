@@ -25,3 +25,26 @@ toggleSwitch.addEventListener('change', switchTheme, false);
 new ClipboardJS('.copy-email-link');
 
 
+
+const mobileNavIcon = document.querySelector("#mobile-nav-icon");
+const mobileNavMenu = document.querySelector("#mobile-nav");
+const icon = document.querySelector("#nav-icon");
+
+mobileNavIcon.addEventListener("click", toggleNavBar, false);
+
+function toggleNavBar(){    
+    
+    if(mobileNavMenu.classList.contains("hidden")){
+        mobileNavMenu.classList.remove("hidden");
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-times");
+        
+    }else{
+        mobileNavMenu.classList.add("hidden");
+        icon.classList.add("fa-bars");
+        icon.classList.remove("fa-times");
+    }
+    return false;
+
+}
+

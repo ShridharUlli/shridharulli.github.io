@@ -21,24 +21,5 @@ body{
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
 }
-  //delete the background to apply your own style
-  
-
-.container{
-  width: $width-body;
-  margin: 0 auto;
-}
-
-.container section .centered-content{
-  position: absolute;
-  top: 50%;
-  transform: translate(0%,-50%);
-}
-
-img.img-responsive{
-  width: 100%;
-  height: 100%;
-}
-
 
   
