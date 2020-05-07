@@ -1,3 +1,3 @@
 # Personal Website
 
-[shridharulli.github.io](http://shridharulli.github.io/)
+[@ShridharUlli](http://shridharulli.github.io/)
