@@ -1,11 +1,15 @@
 :root{
     --background: #fff;
-    --color: #0D47A1;    
+    --color: #0D47A1;
+    --selection-background: #FFF498;
+    --selection-color: var(--color);    
 }
 
 [data-theme="dark"] {
     --background: #17223b;
     --color: #90CAF9;
+    --selection-background: #60ECBD;
+    --selection-color: var(--background);        
 }
 
 $background: var(--background);

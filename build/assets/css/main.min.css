@@ -1,11 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900|Raleway:100,200,300,400,500,600,700,800,900&display=swap");
 :root {
   --background: #fff;
-  --color: #0D47A1; }
+  --color: #0D47A1;
+  --selection-background: #FFF498;
+  --selection-color: var(--color); }
 
 [data-theme="dark"] {
   --background: #17223b;
-  --color: #90CAF9; }
+  --color: #90CAF9;
+  --selection-background: #60ECBD;
+  --selection-color: var(--background); }
 
 .h-screen-10 {
   height: 10vh; }
@@ -86,10 +90,12 @@ section ul.social-media-icons li a {
   font-size: 36px; }
 
 ::selection {
-  background: #FFF498; }
+  background: var(--selection-background);
+  color: var(--selection-color); }
 
 ::-moz-selection {
-  background: #FFF498; }
+  background: var(--selection-background);
+  color: var(--selection-color); }
 
 img::selection {
   background: transparent; }
