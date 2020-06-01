@@ -1,11 +1,11 @@
 :root{
-    --background: #ffffff;
-    --color: #21447F;    
+    --background: #fff;
+    --color: #0D47A1;    
 }
 
 [data-theme="dark"] {
-    --background: #21447F;
-    --color: #ffffff;
+    --background: #17223b;
+    --color: #90CAF9;
 }
 
 $background: var(--background);
