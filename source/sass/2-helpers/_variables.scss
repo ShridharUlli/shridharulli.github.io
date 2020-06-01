@@ -1,6 +1,6 @@
 :root{
     --background: #fff;
-    --color: #0D47A1;
+    --color: #21447F;
     --selection-background: #FFF498;
     --selection-color: var(--color);    
 }
@@ -14,6 +14,8 @@
 
 $background: var(--background);
 $color: var(--color);
+$selection-background: var(--selection-background);
+$selection-color: var(--selection-color);        
 
 
 $primary-font-family: 'Merriweather', serif;

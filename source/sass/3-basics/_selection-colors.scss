@@ -1,10 +1,10 @@
 ::selection{
-  background: var(--selection-background);
-  color: var(--selection-color);
+  background: $selection-background;
+  color: $selection-color;
 }
 ::-moz-selection{
-  background: var(--selection-background);
-  color: var(--selection-color);
+  background: $selection-background;
+  color: $selection-color;
 }
 img::selection{
   background: transparent;
