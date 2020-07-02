@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900|Raleway:100,200,300,400,500,600,700,800,900&display=swap");
 :root {
   --background: #fff;
   --color: #21447F;
@@ -106,8 +105,71 @@ img::-moz-selection {
 body {
   -webkit-tap-highlight-color: #e2e8f0; }
 
-.gigantic, .huge, .large, .bigger, .big,
-h1, h2, h3, h4, h5, h6 {
+@font-face {
+  font-family: "Texta";
+  src: url("assets/fonts/Texta/texta_thin/Texta-Thin-webfont.eot");
+  src: url("assets/fonts/Texta/texta_thin/Texta-Thin-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Texta/texta_thin/Texta-Thin-webfont.woff") format("woff"), url("assets/fonts/Texta/texta_thin/Texta-Thin-webfont.ttf") format("truetype"), url("assets/fonts/Texta/texta_thin/Texta-Thin-webfont.svg#UbuntuItalic") format("svg");
+  font-weight: 100; }
+
+@font-face {
+  font-family: "Texta";
+  src: url("assets/fonts/Texta/texta_light/Texta-Light-webfont.eot");
+  src: url("assets/fonts/Texta/texta_light/Texta-Light-webfont?#iefix") format("embedded-opentype"), url("assets/fonts/Texta/texta_light/Texta-Light-webfont.woff") format("woff"), url("assets/fonts/Texta/texta_light/Texta-Light-webfont.ttf") format("truetype"), url("assets/fonts/Texta/texta_light/Texta-Light-webfont.svg#UbuntuItalic") format("svg");
+  font-weight: 200; }
+
+@font-face {
+  font-family: "Texta";
+  src: url("assets/fonts/Texta/texta_book/Texta-Book-webfont.eot");
+  src: url("assets/fonts/Texta/texta_book/Texta-Book-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Texta/texta_book/Texta-Book-webfont.woff") format("woff"), url("assets/fonts/Texta/texta_book/Texta-Book-webfont.ttf") format("truetype"), url("assets/fonts/Texta/texta_book/Texta-Book-webfont.svg#UbuntuItalic") format("svg");
+  font-weight: 300; }
+
+@font-face {
+  font-family: "Texta";
+  src: url("assets/fonts/Texta/texta_regular/Texta-Regular-webfont.eot");
+  src: url("assets/fonts/Texta/texta_regular/Texta-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Texta/texta_regular/Texta-Regular-webfont.woff") format("woff"), url("assets/fonts/Texta/texta_regular/Texta-Regular-webfont.ttf") format("truetype"), url("assets/fonts/Texta/texta_regular/Texta-Regular-webfont.svg#UbuntuItalic") format("svg");
+  font-weight: 400; }
+
+@font-face {
+  font-family: "Texta";
+  src: url("assets/fonts/Texta/texta_medium/Texta-Medium-webfont.eot");
+  src: url("assets/fonts/Texta/texta_medium/Texta-Medium-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Texta/texta_medium/Texta-Medium-webfont.woff") format("woff"), url("assets/fonts/Texta/texta_medium/Texta-Medium-webfont.ttf") format("truetype"), url("assets/fonts/Texta/texta_medium/Texta-Medium-webfont.svg#UbuntuItalic") format("svg");
+  font-weight: 500; }
+
+@font-face {
+  font-family: "Texta";
+  src: url("assets/fonts/Texta/texta_bold/Texta-Bold-webfont.eot");
+  src: url("assets/fonts/Texta/texta_bold/Texta-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Texta/texta_bold/Texta-Bold-webfont.woff") format("woff"), url("assets/fonts/Texta/texta_bold/Texta-Bold-webfont.ttf") format("truetype"), url("assets/fonts/Texta/texta_bold/Texta-Bold-webfont.svg#UbuntuItalic") format("svg");
+  font-weight: 700; }
+
+@font-face {
+  font-family: "Texta";
+  src: url("assets/fonts/Texta/texta_black/Texta-Black-webfont.eot");
+  src: url("assets/fonts/Texta/texta_black/Texta-Black-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Texta/texta_black/Texta-Black-webfont.woff") format("woff"), url("assets/fonts/Texta/texta_black/Texta-Black-webfont.ttf") format("truetype"), url("assets/fonts/Texta/texta_black/Texta-Black.svg#UbuntuItalic") format("svg");
+  font-weight: 800; }
+
+@font-face {
+  font-family: "Texta";
+  src: url("assets/fonts/Texta/texta_heavy/Texta-Heavy-webfont.eot");
+  src: url("assets/fonts/Texta/texta_heavy/Texta-Heavy-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Texta/texta_heavy/Texta-Heavy-webfont.woff") format("woff"), url("assets/fonts/Texta/texta_heavy/Texta-Heavy-webfont.ttf") format("truetype"), url("assets/fonts/Texta/texta_heavy/Texta-Heavy-webfont.svg#UbuntuItalic") format("svg");
+  font-weight: 900; }
+
+@font-face {
+  font-family: "Clarendon";
+  src: url("assets/fonts/ClarendonURWLig/ClarendonURW-Lig.eot");
+  src: url("assets/fonts/ClarendonURWLig/ClarendonURW-Lig.eot?#iefix") format("embedded-opentype"), url("assets/fonts/ClarendonURWLig/ClarendonURW-Lig.woff") format("woff"), url("assets/fonts/ClarendonURWLig/ClarendonURW-Lig.ttf") format("truetype"), url("assets/fonts/ClarendonURWLig/ClarendonURW-Lig.svg#UbuntuItalic") format("svg");
+  font-weight: 300; }
+
+.gigantic,
+.huge,
+.large,
+.bigger,
+.big,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--color);
   font-family: "Merriweather", serif; }
 
@@ -119,35 +181,44 @@ h1, h2, h3, h4, h5, h6 {
     .gigantic {
       font-size: 55px; } }
 
-.huge, h1 {
+.huge,
+h1 {
   font-size: 68px;
   line-height: 1.05; }
   @media only screen and (max-width: 639px) {
-    .huge, h1 {
+    .huge,
+    h1 {
       font-size: 44px; } }
 
-.large, h2 {
+.large,
+h2 {
   font-size: 42px;
   line-height: 1.14; }
   @media only screen and (max-width: 639px) {
-    .large, h2 {
+    .large,
+    h2 {
       font-size: 25px; } }
 
-.bigger, h3 {
+.bigger,
+h3 {
   font-size: 26px;
   line-height: 1.38; }
   @media only screen and (max-width: 639px) {
-    .bigger, h3 {
+    .bigger,
+    h3 {
       font-size: 22px; } }
 
-.big, h4 {
+.big,
+h4 {
   font-size: 22px;
   line-height: 1.38; }
   @media only screen and (max-width: 639px) {
-    .big, h4 {
+    .big,
+    h4 {
       font-size: 18px; } }
 
-.small, small {
+.small,
+small {
   font-size: 10px;
   line-height: 1.2; }
 
@@ -288,6 +359,9 @@ input:checked + .slider:before {
   font-family: "Raleway", sans-serif;
   line-height: 1.6;
   font-weight: 500; }
+
+.font-texta {
+  font-family: "Texta"; }
 
 .copy-email-link {
   background: transparent;
