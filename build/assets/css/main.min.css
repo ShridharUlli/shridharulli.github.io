@@ -1,15 +1,18 @@
-@import url("https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900|Raleway:100,200,300,400,500,600,700,800,900&display=swap");
 :root {
-  --background: #fff;
-  --color: #21447F;
-  --selection-background: #FFF498;
+  --background: #ffffff;
+  --color: #21447f;
+  --accent: #00c1a0;
+  --switch: #000;
+  --selection-background: #fff498;
   --selection-color: var(--color); }
 
 [data-theme="dark"] {
-  --background: #17223b;
-  --color: #90CAF9;
-  --selection-background: #60ECBD;
-  --selection-color: var(--background); }
+  --background: #282c35;
+  --color: #ffffff;
+  --accent: #ffa7c4;
+  --switch: #fff;
+  --selection-background: #ffa7c4;
+  --selection-color: var(--color); }
 
 .h-screen-10 {
   height: 10vh; }
@@ -38,23 +41,236 @@
 .h-screen-90 {
   height: 90vh; }
 
-.bg-default {
+.accent-color {
+  color: var(--accent); }
+
+.bg-color {
   background-color: var(--background); }
 
-.bg-contrast {
-  background-color: var(--color); }
-
-.text-default {
+.text-color {
   color: var(--color); }
 
-.text-contrast {
-  color: var(--background); }
+.texta {
+  font-family: "Texta", serif; }
 
-.text-primary {
-  font-family: "Merriweather", serif; }
+.clarendon {
+  font-family: "Clarendon", sans-serif; }
 
-.text-secondary {
-  font-family: "Raleway", sans-serif; }
+.sun svg {
+  stroke: var(--switch); }
+
+.moon svg {
+  stroke: var(--switch); }
+
+.lh-one-times {
+  line-height: 1.618; }
+
+.lh-two-times {
+  line-height: 3.236; }
+
+/* https://coolors.co/ff5628-1e3541-2e5266-dee5e5-fcfafa */
+/* some effects transition more than one property at the same time */
+/* some effects transition height, some width, some both */
+/* checks if the transition-property is set to none */
+.text-hover-accent {
+  display: inline;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transition-property: color;
+  transition-property: color;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+.text-hover-accent:after,
+.text-hover-accent:before {
+  -webkit-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s; }
+
+.text-hover-accent:after {
+  background-color: var(--accent); }
+
+.text-hover-accent:before {
+  background-color: var(--accent); }
+
+.text-hover-accent:hover,
+.text-hover-accent:focus {
+  outline: 0;
+  cursor: pointer;
+  color: var(--accent);
+  -webkit-transition: color 0.7s ease-in-out;
+  transition: color 0.7s ease-in-out; }
+
+.text-hover-accent:hover:after,
+.text-hover-accent:focus:after {
+  background-color: var(--accent); }
+
+.text-hover-accent:hover:before,
+.text-hover-accent:focus:before {
+  background-color: var(--accent); }
+
+.text-hover-accent:hover:after,
+.text-hover-accent:focus:after,
+.text-hover-accent:hover:before,
+.text-hover-accent:focus:before {
+  -webkit-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s; }
+
+.text-hover-underline-goes-right:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-transition-property: width, background-color;
+  transition-property: width, background-color;
+  width: 0;
+  height: 3px; }
+
+.text-hover-underline-goes-right:hover:after,
+.text-hover-underline-goes-right:focus:after {
+  outline: 0;
+  -webkit-transition-property: width, background-color;
+  transition-property: width, background-color;
+  width: 100%; }
+
+.text-hover-underline-goes-right:after {
+  left: 0;
+  bottom: 0; }
+
+.text-hover-right-goes-up:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-transition-property: height, background-color;
+  transition-property: height, background-color;
+  height: 0;
+  width: 3px; }
+
+.text-hover-right-goes-up:hover:after,
+.text-hover-right-goes-up:focus:after {
+  outline: 0;
+  -webkit-transition-property: height, background-color;
+  transition-property: height, background-color;
+  height: 100%; }
+
+.text-hover-right-goes-up:after {
+  bottom: 0%;
+  right: 0%; }
+
+.text-hover-fill-goes-right {
+  display: inline;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transition-property: color;
+  transition-property: color;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+.text-hover-fill-goes-right:after,
+.text-hover-fill-goes-right:before {
+  -webkit-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s; }
+
+.text-hover-fill-goes-right:after {
+  background-color: var(--accent); }
+
+.text-hover-fill-goes-right:before {
+  background-color: var(--accent); }
+
+.text-hover-fill-goes-right:hover,
+.text-hover-fill-goes-right:focus {
+  outline: 0;
+  cursor: pointer;
+  color: var(--background);
+  -webkit-transition: color 0.7s ease-in-out;
+  transition: color 0.7s ease-in-out; }
+
+.text-hover-fill-goes-right:hover:after,
+.text-hover-fill-goes-right:focus:after {
+  background-color: var(--accent); }
+
+.text-hover-fill-goes-right:hover:before,
+.text-hover-fill-goes-right:focus:before {
+  background-color: var(--accent); }
+
+.text-hover-fill-goes-right:hover:after,
+.text-hover-fill-goes-right:focus:after,
+.text-hover-fill-goes-right:hover:before,
+.text-hover-fill-goes-right:focus:before {
+  -webkit-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s; }
+
+.text-hover-fill-goes-right:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-transition-property: width, background-color;
+  transition-property: width, background-color;
+  width: 0;
+  height: 3px; }
+
+.text-hover-fill-goes-right:hover:after,
+.text-hover-fill-goes-right:focus:after {
+  outline: 0;
+  -webkit-transition-property: width, background-color;
+  transition-property: width, background-color;
+  width: 100%; }
+
+.text-hover-fill-goes-right:after {
+  top: 0%;
+  left: 0;
+  bottom: 0;
+  height: 100%; }
 
 html {
   box-sizing: border-box; }
@@ -106,68 +322,59 @@ img::-moz-selection {
 body {
   -webkit-tap-highlight-color: #e2e8f0; }
 
-.gigantic, .huge, .large, .bigger, .big,
-h1, h2, h3, h4, h5, h6 {
-  color: var(--color);
-  font-family: "Merriweather", serif; }
+@font-face {
+  font-family: "Texta";
+  src: url("../fonts/Texta/texta_thin/Texta-Thin-webfont.eot");
+  src: url("../fonts/Texta/texta_thin/Texta-Thin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Texta/texta_thin/Texta-Thin-webfont.woff") format("woff"), url("../fonts/Texta/texta_thin/Texta-Thin-webfont.ttf") format("truetype"), url("../fonts/Texta/texta_thin/Texta-Thin-webfont.svg#UbuntuItalic") format("svg");
+  font-weight: 100; }
 
-.gigantic {
-  font-size: 110px;
-  line-height: 1.09;
-  letter-spacing: -2px; }
-  @media only screen and (max-width: 639px) {
-    .gigantic {
-      font-size: 55px; } }
+@font-face {
+  font-family: "Texta";
+  src: url("../fonts/Texta/texta_light/Texta-Light-webfont.eot");
+  src: url("../fonts/Texta/texta_light/Texta-Light-webfont?#iefix") format("embedded-opentype"), url("../fonts/Texta/texta_light/Texta-Light-webfont.woff") format("woff"), url("../fonts/Texta/texta_light/Texta-Light-webfont.ttf") format("truetype"), url("../fonts/Texta/texta_light/Texta-Light-webfont.svg#UbuntuItalic") format("svg");
+  font-weight: 200; }
 
-.huge, h1 {
-  font-size: 68px;
-  line-height: 1.05; }
-  @media only screen and (max-width: 639px) {
-    .huge, h1 {
-      font-size: 44px; } }
+@font-face {
+  font-family: "Texta";
+  src: url("../fonts/Texta/texta_book/Texta-Book-webfont.eot");
+  src: url("../fonts/Texta/texta_book/Texta-Book-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Texta/texta_book/Texta-Book-webfont.woff") format("woff"), url("../fonts/Texta/texta_book/Texta-Book-webfont.ttf") format("truetype"), url("../fonts/Texta/texta_book/Texta-Book-webfont.svg#UbuntuItalic") format("svg");
+  font-weight: 300; }
 
-.large, h2 {
-  font-size: 42px;
-  line-height: 1.14; }
-  @media only screen and (max-width: 639px) {
-    .large, h2 {
-      font-size: 25px; } }
+@font-face {
+  font-family: "Texta";
+  src: url("../fonts/Texta/texta_regular/Texta-Regular-webfont.eot");
+  src: url("../fonts/Texta/texta_regular/Texta-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Texta/texta_regular/Texta-Regular-webfont.woff") format("woff"), url("../fonts/Texta/texta_regular/Texta-Regular-webfont.ttf") format("truetype"), url("../fonts/Texta/texta_regular/Texta-Regular-webfont.svg#UbuntuItalic") format("svg");
+  font-weight: 400; }
 
-.bigger, h3 {
-  font-size: 26px;
-  line-height: 1.38; }
-  @media only screen and (max-width: 639px) {
-    .bigger, h3 {
-      font-size: 22px; } }
+@font-face {
+  font-family: "Texta";
+  src: url("../fonts/Texta/texta_medium/Texta-Medium-webfont.eot");
+  src: url("../fonts/Texta/texta_medium/Texta-Medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Texta/texta_medium/Texta-Medium-webfont.woff") format("woff"), url("../fonts/Texta/texta_medium/Texta-Medium-webfont.ttf") format("truetype"), url("../fonts/Texta/texta_medium/Texta-Medium-webfont.svg#UbuntuItalic") format("svg");
+  font-weight: 500; }
 
-.big, h4 {
-  font-size: 22px;
-  line-height: 1.38; }
-  @media only screen and (max-width: 639px) {
-    .big, h4 {
-      font-size: 18px; } }
+@font-face {
+  font-family: "Texta";
+  src: url("../fonts/Texta/texta_bold/Texta-Bold-webfont.eot");
+  src: url("../fonts/Texta/texta_bold/Texta-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Texta/texta_bold/Texta-Bold-webfont.woff") format("woff"), url("../fonts/Texta/texta_bold/Texta-Bold-webfont.ttf") format("truetype"), url("../fonts/Texta/texta_bold/Texta-Bold-webfont.svg#UbuntuItalic") format("svg");
+  font-weight: 700; }
 
-.small, small {
-  font-size: 10px;
-  line-height: 1.2; }
+@font-face {
+  font-family: "Texta";
+  src: url("../fonts/Texta/texta_black/Texta-Black-webfont.eot");
+  src: url("../fonts/Texta/texta_black/Texta-Black-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Texta/texta_black/Texta-Black-webfont.woff") format("woff"), url("../fonts/Texta/texta_black/Texta-Black-webfont.ttf") format("truetype"), url("../fonts/Texta/texta_black/Texta-Black.svg#UbuntuItalic") format("svg");
+  font-weight: 800; }
 
-p {
-  margin: 0 0 20px 0;
-  font-weight: 400;
-  font-size: 16px; }
+@font-face {
+  font-family: "Texta";
+  src: url("../fonts/Texta/texta_heavy/Texta-Heavy-webfont.eot");
+  src: url("../fonts/Texta/texta_heavy/Texta-Heavy-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Texta/texta_heavy/Texta-Heavy-webfont.woff") format("woff"), url("../fonts/Texta/texta_heavy/Texta-Heavy-webfont.ttf") format("truetype"), url("../fonts/Texta/texta_heavy/Texta-Heavy-webfont.svg#UbuntuItalic") format("svg");
+  font-weight: 900; }
 
-em {
-  font-style: italic; }
-
-strong {
-  font-weight: bold; }
-
-hr {
-  border: solid #ddd;
-  border-width: 1px 0 0;
-  clear: both;
-  margin: 10px 0 30px;
-  height: 0; }
+@font-face {
+  font-family: "Clarendon";
+  src: url("../fonts/ClarendonURWLig/ClarendonURW-Lig.eot");
+  src: url("../fonts/ClarendonURWLig/ClarendonURW-Lig.eot?#iefix") format("embedded-opentype"), url("../fonts/ClarendonURWLig/ClarendonURW-Lig.woff") format("woff"), url("../fonts/ClarendonURWLig/ClarendonURW-Lig.ttf") format("truetype"), url("../fonts/ClarendonURWLig/ClarendonURW-Lig.svg#UbuntuItalic") format("svg");
+  font-weight: 300; }
 
 #logo {
   fill: var(--color); }
@@ -188,7 +395,7 @@ nav ul li:last-child {
   padding-right: 0px; }
 
 nav ul li a {
-  font-family: "Merriweather", serif;
+  font-family: "Texta", serif;
   font-weight: 100;
   color: var(--color);
   text-decoration: none; }
@@ -220,23 +427,23 @@ nav ul li a.active {
   position: absolute;
   right: 0;
   top: 0;
-  transition: .4s; }
+  transition: 0.4s; }
 
 .slider:before {
   background-color: var(--background);
   bottom: 3px;
   content: "";
   height: 15px;
-  left: 20px;
+  left: 5px;
   position: absolute;
-  transition: .4s;
+  transition: 0.4s;
   width: 15px; }
 
 input:checked + .slider {
-  background-color: var(--color); }
+  background-color: var(--accent); }
 
 input:checked + .slider:before {
-  transform: translateX(-16px); }
+  transform: translateX(16px); }
 
 .slider.round {
   border-radius: 10px; }
@@ -244,8 +451,10 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%; }
 
-.cards .card-container h4, .cards .card-container p, .cards .card-container a {
-  font-family: "Raleway", sans-serif !important; }
+.cards .card-container h4,
+.cards .card-container p,
+.cards .card-container a {
+  font-family: "Clarendon", sans-serif !important; }
 
 .cards .card-container h4 {
   color: var(--background); }
@@ -276,16 +485,17 @@ input:checked + .slider:before {
   background-color: var(--color);
   padding: 30px;
   color: var(--background);
-  font-family: "Raleway", sans-serif;
+  font-family: "Clarendon", sans-serif;
   margin-bottom: 10vh; }
 
-.article-main-header, .article-second-header {
+.article-main-header,
+.article-second-header {
   color: var(--background);
-  font-family: "Raleway", sans-serif; }
+  font-family: "Clarendon", sans-serif; }
 
 .about-me-details {
   color: var(--color);
-  font-family: "Raleway", sans-serif;
+  font-family: "Texta", serif;
   line-height: 1.6;
   font-weight: 500; }
 
@@ -310,7 +520,7 @@ input:checked + .slider:before {
   top: -31px;
   right: -65px;
   font-size: 14px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Clarendon", sans-serif;
   width: 140px;
   background-color: var(--color);
   color: var(--background);
