@@ -1,7 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 :root {
   --background: #ffffff;
-  --color: #21447f;
-  --accent: #00c1a0;
+  --color: #29363d;
+  --accent: #2196f3;
   --switch: #000;
   --selection-background: #fff498;
   --selection-color: var(--color); }
@@ -51,10 +52,13 @@
   color: var(--color); }
 
 .texta {
-  font-family: "Texta", serif; }
+  font-family: "Texta", sans-serif; }
 
 .clarendon {
-  font-family: "Clarendon", sans-serif; }
+  font-family: "Clarendon", serif; }
+
+.inter {
+  font-family: "Inter", sans-serif; }
 
 .sun svg {
   stroke: var(--switch); }
@@ -395,7 +399,7 @@ nav ul li:last-child {
   padding-right: 0px; }
 
 nav ul li a {
-  font-family: "Texta", serif;
+  font-family: "Inter", sans-serif;
   font-weight: 100;
   color: var(--color);
   text-decoration: none; }
@@ -454,7 +458,7 @@ input:checked + .slider:before {
 .cards .card-container h4,
 .cards .card-container p,
 .cards .card-container a {
-  font-family: "Clarendon", sans-serif !important; }
+  font-family: "Inter", sans-serif !important; }
 
 .cards .card-container h4 {
   color: var(--background); }
@@ -485,17 +489,17 @@ input:checked + .slider:before {
   background-color: var(--color);
   padding: 30px;
   color: var(--background);
-  font-family: "Clarendon", sans-serif;
+  font-family: "Inter", sans-serif;
   margin-bottom: 10vh; }
 
 .article-main-header,
 .article-second-header {
   color: var(--background);
-  font-family: "Clarendon", sans-serif; }
+  font-family: "Inter", sans-serif; }
 
 .about-me-details {
   color: var(--color);
-  font-family: "Texta", serif;
+  font-family: "Inter", sans-serif;
   line-height: 1.6;
   font-weight: 500; }
 
@@ -520,7 +524,7 @@ input:checked + .slider:before {
   top: -31px;
   right: -65px;
   font-size: 14px;
-  font-family: "Clarendon", sans-serif;
+  font-family: "Inter", sans-serif;
   width: 140px;
   background-color: var(--color);
   color: var(--background);
