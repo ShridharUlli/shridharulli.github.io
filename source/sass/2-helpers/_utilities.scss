@@ -68,3 +68,10 @@
 .lh-two-times {
   line-height: 1.618 * 2;
 }
+
+//text-decoration-colors
+
+.decoration-accent{
+  text-decoration-color: $accent;
+  text-underline-offset: 4px;
+}

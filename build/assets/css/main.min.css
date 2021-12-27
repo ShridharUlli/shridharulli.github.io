@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 :root {
-  --background: #ffffff;
-  --color: #29363d;
-  --accent: #2196f3;
+  --background: #F9F5F4;
+  --color: #0A1931;
+  --accent: #F95E54;
   --switch: #000;
   --selection-background: #fff498;
   --selection-color: var(--color); }
@@ -71,6 +71,10 @@
 
 .lh-two-times {
   line-height: 3.236; }
+
+.decoration-accent {
+  text-decoration-color: var(--accent);
+  text-underline-offset: 4px; }
 
 /* https://coolors.co/ff5628-1e3541-2e5266-dee5e5-fcfafa */
 /* some effects transition more than one property at the same time */
@@ -379,6 +383,30 @@ body {
   src: url("../fonts/ClarendonURWLig/ClarendonURW-Lig.eot");
   src: url("../fonts/ClarendonURWLig/ClarendonURW-Lig.eot?#iefix") format("embedded-opentype"), url("../fonts/ClarendonURWLig/ClarendonURW-Lig.woff") format("woff"), url("../fonts/ClarendonURWLig/ClarendonURW-Lig.ttf") format("truetype"), url("../fonts/ClarendonURWLig/ClarendonURW-Lig.svg#UbuntuItalic") format("svg");
   font-weight: 300; }
+
+@font-face {
+  font-family: "Clarendon";
+  src: url("../fonts/ClarendonURW-Reg/ClarendonURW-Reg.eot");
+  src: url("../fonts/ClarendonURW-Reg/ClarendonURW-Reg.eot?#iefix") format("embedded-opentype"), url("../fonts/ClarendonURW-Reg/ClarendonURW-Reg.woff") format("woff"), url("../fonts/ClarendonURW-Reg/ClarendonURW-Reg.ttf") format("truetype"), url("../fonts/ClarendonURW-Reg/ClarendonURW-Reg.svg#UbuntuItalic") format("svg");
+  font-weight: 400; }
+
+@font-face {
+  font-family: "Clarendon";
+  src: url("../fonts/ClarendonURWMed/ClarendonURW-Med.eot");
+  src: url("../fonts/ClarendonURWMed/ClarendonURW-Med.eot?#iefix") format("embedded-opentype"), url("../fonts/ClarendonURWMed/ClarendonURW-Med.woff") format("woff"), url("../fonts/ClarendonURWMed/ClarendonURW-Med.ttf") format("truetype"), url("../fonts/ClarendonURWMed/ClarendonURW-Med.svg#UbuntuItalic") format("svg");
+  font-weight: 500; }
+
+@font-face {
+  font-family: "Clarendon";
+  src: url("../fonts/ClarendonURW-Bol/ClarendonURW-Bol.eot");
+  src: url("../fonts/ClarendonURW-Bol/ClarendonURW-Bol.eot?#iefix") format("embedded-opentype"), url("../fonts/ClarendonURW-Bol/ClarendonURW-Bol.woff") format("woff"), url("../fonts/ClarendonURW-Bol/ClarendonURW-Bol.ttf") format("truetype"), url("../fonts/ClarendonURW-Bol/ClarendonURW-Bol.svg#UbuntuItalic") format("svg");
+  font-weight: 700; }
+
+@font-face {
+  font-family: "Clarendon";
+  src: url("../fonts/ClarendonURWExtBol/ClarendonURW-ExtBol.eot");
+  src: url("../fonts/ClarendonURWExtBol/ClarendonURW-ExtBol.eot?#iefix") format("embedded-opentype"), url("../fonts/ClarendonURWExtBol/ClarendonURW-ExtBol.woff") format("woff"), url("../fonts/ClarendonURWExtBol/ClarendonURW-ExtBol.ttf") format("truetype"), url("../fonts/ClarendonURWExtBol/ClarendonURW-ExtBol.svg#UbuntuItalic") format("svg");
+  font-weight: 800; }
 
 #logo {
   fill: var(--color); }
