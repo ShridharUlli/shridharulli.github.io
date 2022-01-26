@@ -7,13 +7,21 @@
 //   --selection-color: var(--color);
 // }
 :root {
-  --background: #F9F5F4;
-  --color: #0A1931;
+  --background: #ffffff;
+  --color: #000000;
   --accent: #F95E54;
   --switch: #000;
-  --selection-background: #fff498;
-  --selection-color: var(--color);
+  --selection-background: #000000;
+  --selection-color: var(--background);
 }
+// :root {
+//   --background: #F9F5F4;
+//   --color: #0A1931;
+//   --accent: #F95E54;
+//   --switch: #000;
+//   --selection-background: #fff498;
+//   --selection-color: var(--color);
+// }
 
 [data-theme="dark"] {
   --background: #282c35;

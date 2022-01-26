@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 :root {
-  --background: #F9F5F4;
-  --color: #0A1931;
+  --background: #ffffff;
+  --color: #000000;
   --accent: #F95E54;
   --switch: #000;
-  --selection-background: #fff498;
-  --selection-color: var(--color); }
+  --selection-background: #000000;
+  --selection-color: var(--background); }
 
 [data-theme="dark"] {
   --background: #282c35;
