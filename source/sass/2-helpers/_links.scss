@@ -1,18 +1,23 @@
-/* https://coolors.co/ff5628-1e3541-2e5266-dee5e5-fcfafa */
+/* https://coolors.co/ff5628-041562-2e5266-dee5e5-fcfafa */
+/* some effects transition more than one property at the same time */
+/* some effects transition height, some width, some both */
+/* checks if the transition-property is set to none */
+/* https://coolors.co/ff5628-041562-2e5266-dee5e5-fcfafa */
 /* some effects transition more than one property at the same time */
 /* some effects transition height, some width, some both */
 /* checks if the transition-property is set to none */
 
-.text-hover-accent {
+/* FILLS */
+.text-hover-fill-goes-up {
   display: inline;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  // padding-left: 10px;
+  padding-top: 2px;
+  padding-bottom: 0px;
+  padding-right: 5px;
+  padding-left: 0px;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
   -webkit-transition-property: color;
@@ -29,186 +34,50 @@
   -ms-user-select: none;
   user-select: none;
   -webkit-touch-callout: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-.text-hover-accent:after,
-.text-hover-accent:before {
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
-}
-.text-hover-accent:after {
-  background-color: $accent;
-}
-.text-hover-accent:before {
-  background-color: $accent;
-}
-.text-hover-accent:hover,
-.text-hover-accent:focus {
-  outline: 0;
-  cursor: pointer;
-  color: $accent;
-  -webkit-transition: color 0.7s ease-in-out;
-  transition: color 0.7s ease-in-out;
-}
-.text-hover-accent:hover:after,
-.text-hover-accent:focus:after {
-  background-color: $accent;
-}
-.text-hover-accent:hover:before,
-.text-hover-accent:focus:before {
-  background-color: $accent;
-}
-.text-hover-accent:hover:after,
-.text-hover-accent:focus:after,
-.text-hover-accent:hover:before,
-.text-hover-accent:focus:before {
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
-}
-
-.text-hover-underline-goes-right:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  -webkit-transition-property: width, background-color;
-  transition-property: width, background-color;
-  width: 0;
-  height: 3px;
-}
-
-.text-hover-underline-goes-right:hover:after,
-.text-hover-underline-goes-right:focus:after {
-  outline: 0;
-  -webkit-transition-property: width, background-color;
-  transition-property: width, background-color;
-  width: 100%;
-}
-
-.text-hover-underline-goes-right:after {
-  left: 0;
-  bottom: 0;
-}
-
-.text-hover-right-goes-up:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  -webkit-transition-property: height, background-color;
-  transition-property: height, background-color;
-  height: 0;
-  width: 3px;
-}
-
-.text-hover-right-goes-up:hover:after,
-.text-hover-right-goes-up:focus:after {
-  outline: 0;
-  -webkit-transition-property: height, background-color;
-  transition-property: height, background-color;
-  height: 100%;
-}
-
-.text-hover-right-goes-up:after {
-  bottom: 0%;
-  right: 0%;
-}
-
-.text-hover-fill-goes-right {
-  display: inline;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  // padding-left: 10px;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
-  -webkit-transition-property: color;
-  transition-property: color;
-  white-space: nowrap;
-  overflow: hidden;
-  position: relative;
-  z-index: 2;
-  text-decoration: none;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-.text-hover-fill-goes-right:after,
-.text-hover-fill-goes-right:before {
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
-}
-.text-hover-fill-goes-right:after {
-  background-color: $accent;
-}
-.text-hover-fill-goes-right:before {
-  background-color: $accent;
-}
-.text-hover-fill-goes-right:hover,
-.text-hover-fill-goes-right:focus {
-  outline: 0;
-  cursor: pointer;
-  color: $background;
-  -webkit-transition: color 0.7s ease-in-out;
-  transition: color 0.7s ease-in-out;
-}
-.text-hover-fill-goes-right:hover:after,
-.text-hover-fill-goes-right:focus:after {
-  background-color: $accent;
-}
-.text-hover-fill-goes-right:hover:before,
-.text-hover-fill-goes-right:focus:before {
-  background-color: $accent;
-}
-.text-hover-fill-goes-right:hover:after,
-.text-hover-fill-goes-right:focus:after,
-.text-hover-fill-goes-right:hover:before,
-.text-hover-fill-goes-right:focus:before {
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
-}
-.text-hover-fill-goes-right:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  -webkit-transition-property: width, background-color;
-  transition-property: width, background-color;
-  width: 0;
-  height: 3px;
-}
-.text-hover-fill-goes-right:hover:after,
-.text-hover-fill-goes-right:focus:after {
-  outline: 0;
-  -webkit-transition-property: width, background-color;
-  transition-property: width, background-color;
-  width: 100%;
-}
-.text-hover-fill-goes-right:after {
-  top: 0%;
-  left: 0;
-  bottom: 0;
-  height: 100%;
-}
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  .text-hover-fill-goes-up:after, .text-hover-fill-goes-up:before {
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s; }
+  .text-hover-fill-goes-up:after {
+    background-color: #041562; }
+  .text-hover-fill-goes-up:before {
+    background-color: #041562; }
+  .text-hover-fill-goes-up:hover, .text-hover-fill-goes-up:focus {
+    outline: 0;
+    cursor: pointer;
+    color: #fcfafa;
+    -webkit-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out; }
+  .text-hover-fill-goes-up:hover:after, .text-hover-fill-goes-up:focus:after {
+    background-color: #041562; }
+  .text-hover-fill-goes-up:hover:before, .text-hover-fill-goes-up:focus:before {
+    background-color: #041562; }
+  .text-hover-fill-goes-up:hover:after, .text-hover-fill-goes-up:focus:after, .text-hover-fill-goes-up:hover:before, .text-hover-fill-goes-up:focus:before {
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s; }
+  .text-hover-fill-goes-up:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-transition-property: height, background-color;
+    transition-property: height, background-color;
+    height: 0;
+    width: 3px; }
+  .text-hover-fill-goes-up:hover:after, .text-hover-fill-goes-up:focus:after {
+    outline: 0;
+    -webkit-transition-property: height, background-color;
+    transition-property: height, background-color;
+    height: 100%; }
+  .text-hover-fill-goes-up:after {
+    bottom: 0%;
+    right: 0;
+    left: 0;
+    width: 100%; }
