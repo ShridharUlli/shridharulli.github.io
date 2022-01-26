@@ -2,7 +2,7 @@
 :root {
   --background: #ffffff;
   --color: #000000;
-  --accent: #F95E54;
+  --accent: #006adc;
   --switch: #000;
   --selection-background: #000000;
   --selection-color: var(--background); }
@@ -76,11 +76,11 @@
   text-decoration-color: var(--accent);
   text-underline-offset: 4px; }
 
-/* https://coolors.co/ff5628-041562-2e5266-dee5e5-fcfafa */
+/* https://coolors.co/ff5628-EEF2FF-2e5266-dee5e5-fcfafa */
 /* some effects transition more than one property at the same time */
 /* some effects transition height, some width, some both */
 /* checks if the transition-property is set to none */
-/* https://coolors.co/ff5628-041562-2e5266-dee5e5-fcfafa */
+/* https://coolors.co/ff5628-EEF2FF-2e5266-dee5e5-fcfafa */
 /* some effects transition more than one property at the same time */
 /* some effects transition height, some width, some both */
 /* checks if the transition-property is set to none */
@@ -122,23 +122,23 @@
   transition-delay: 0s; }
 
 .text-hover-fill-goes-up:after {
-  background-color: #041562; }
+  background-color: #EEF2FF; }
 
 .text-hover-fill-goes-up:before {
-  background-color: #041562; }
+  background-color: #EEF2FF; }
 
 .text-hover-fill-goes-up:hover, .text-hover-fill-goes-up:focus {
   outline: 0;
   cursor: pointer;
-  color: #fcfafa;
+  color: #006adc;
   -webkit-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out; }
 
 .text-hover-fill-goes-up:hover:after, .text-hover-fill-goes-up:focus:after {
-  background-color: #041562; }
+  background-color: #EEF2FF; }
 
 .text-hover-fill-goes-up:hover:before, .text-hover-fill-goes-up:focus:before {
-  background-color: #041562; }
+  background-color: #EEF2FF; }
 
 .text-hover-fill-goes-up:hover:after, .text-hover-fill-goes-up:focus:after, .text-hover-fill-goes-up:hover:before, .text-hover-fill-goes-up:focus:before {
   -webkit-transition-duration: 0.3s;
