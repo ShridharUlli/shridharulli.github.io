@@ -1,11 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-:root {
+/* :root {
   --background: #ffffff;
   --color: #000000;
   --accent: #006adc;
   --switch: #000;
   --selection-background: #000000;
-  --selection-color: var(--background); }
+  --selection-color: var(--background); } */
+
+:root {
+  --background: #000000;
+  --color: #ffffff;
+  --accent: #006adc;
+  --switch: #000;
+  --selection-background: #000000;
+  --selection-color: var(--background); }  
 
 [data-theme="dark"] {
   --background: #282c35;
@@ -130,7 +138,7 @@
 .text-hover-fill-goes-up:hover, .text-hover-fill-goes-up:focus {
   outline: 0;
   cursor: pointer;
-  color: #006adc;
+  color: #000000;
   -webkit-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out; }
 
