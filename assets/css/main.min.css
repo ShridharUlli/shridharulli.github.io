@@ -8,11 +8,11 @@
   --selection-color: var(--background); } */
 
 :root {
-  --background: #000000;
-  --color: #ffffff;
+  --background: #18181b;
+  --color: #f3f4f6;
   --accent: #006adc;
   --switch: #000;
-  --selection-background: #000000;
+  --selection-background: var(--color);
   --selection-color: var(--background); }  
 
 [data-theme="dark"] {
